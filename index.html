@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodLike</title>
+  <meta name="description" content="Надёжный дистрибьютор ТНП: ассортимент, бренды, география поставок и быстрая логистика по Казахстану." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER: подставляется из header.html / localStorage -->
+  <header id="header-placeholder"></header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Надёжный дистрибьютор товаров народного потребления</h1>
+    <p>Поставки по всему Казахстану и СНГ: ассортимент, скорость и контроль качества.</p>
+    <button class="cta" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">Оставить заявку</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>О компании</h2>
+    <p>Более 10 лет поставляем товары народного потребления в торговые сети и магазины по всей стране. Собственные склады и отлаженная логистика позволяют держать высокий уровень сервиса и доступные цены.</p>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages">
+    <h2>Наши преимущества</h2>
+    <div class="advantages-grid">
+      <div class="card">Широкий ассортимент</div>
+      <div class="card">Быстрая доставка</div>
+      <div class="card">Конкурентные цены</div>
+      <div class="card">Контроль качества</div>
+      <div class="card">Надёжные бренды</div>
+      <div class="card">Индивидуальные условия</div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="categories">
+    <h2>Ассортимент</h2>
+    <div class="categories-grid">
+      <div class="card"><img src="https://picsum.photos/300/140?1" alt=""><p>Продукты питания</p></div>
+      <div class="card"><img src="https://picsum.photos/300/140?2" alt=""><p>Бытовая химия</p></div>
+      <div class="card"><img src="https://picsum.photos/300/140?3" alt=""><p>Косметика и гигиена</p></div>
+      <div class="card"><img src="https://picsum.photos/300/140?4" alt=""><p>Напитки</p></div>
+      <div class="card"><img src="https://picsum.photos/300/140?5" alt=""><p>Текстиль/хозтовары</p></div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="partners">
+    <h2>Наши бренды</h2>
+    <div class="partners-grid">
+      <div class="card"><img src="https://dummyimage.com/150x80/0d81b7/fff&text=Brand+1" alt="Brand 1"></div>
+      <div class="card"><img src="https://dummyimage.com/150x80/0d81b7/fff&text=Brand+2" alt="Brand 2"></div>
+      <div class="card"><img src="https://dummyimage.com/150x80/0d81b7/fff&text=Brand+3" alt="Brand 3"></div>
+      <div class="card"><img src="https://dummyimage.com/150x80/0d81b7/fff&text=Brand+4" alt="Brand 4"></div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map">
+    <h2>География поставок</h2>
+    <img src="https://dummyimage.com/1200x500/cccccc/000&text=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BE%D0%BA" alt="Карта поставок">
+  </section>
+
+  <!-- STATS (креативная версия) -->
+  <section class="stats stats--creative" aria-labelledby="facts-title">
+    <h2 id="facts-title">Факты о нас</h2>
+    <div class="facts-bg" aria-hidden="true"></div>
+    <div class="facts-grid">
+      <article class="fact">
+        <div class="fact-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8l3-6z"/></svg></div>
+        <div class="fact-num"><span class="stat-num" data-target="10" data-suffix="+">0</span></div>
+        <div class="fact-label">лет опыта</div>
+      </article>
+      <article class="fact">
+        <div class="fact-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V20h14v-3.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.92 1.97 3.45V20h7v-3.5C24 14.17 19.33 13 16 13z"/></svg></div>
+        <div class="fact-num"><span class="stat-num" data-target="500" data-suffix="+">0</span></div>
+        <div class="fact-label">клиентов</div>
+      </article>
+      <article class="fact">
+        <div class="fact-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2l7 6v12h-5v-6H10v6H5V8l7-6z"/></svg></div>
+        <div class="fact-num"><span class="stat-num" data-target="20" data-suffix="+">0</span></div>
+        <div class="fact-label">городов доставки</div>
+      </article>
+      <article class="fact">
+        <div class="fact-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20 8h-3V4H7v4H4l8 8 8-8zM4 18h16v2H4z"/></svg></div>
+        <div class="fact-num"><span class="stat-num" data-target="1500" data-suffix="+">0</span></div>
+        <div class="fact-label">SKU в ассортименте</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <h2>Отзывы клиентов</h2>
+    <div class="review">«Всегда вовремя, ассортимент держат в наличии, претензий по качеству нет»</div>
+    <div class="review">«Оперативная логистика и гибкие условия, удобно работать»</div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-box" id="contacts">
+    <h2>Хотите сотрудничать?</h2>
+    <p>Оставьте заявку — свяжемся в течение 1 рабочего дня.</p>
+    <form onsubmit="event.preventDefault(); alert('Заявка отправлена!');">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <input type="text" placeholder="Компания" required>
+      <input type="text" placeholder="Город" required>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <!-- FOOTER: подставляется из footer.html / localStorage -->
+  <footer id="footer-placeholder"></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
