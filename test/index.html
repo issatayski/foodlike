@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Food Line Distribution</title>
+  <title>Distribut.kz — Дистрибьютор товаров народного потребления</title>
   <meta name="description" content="Надёжный дистрибьютор ТНП: ассортимент, бренды, география поставок и быстрая логистика по Казахстану." />
   <link rel="stylesheet" href="style.css">
+  <!-- EmailJS SDK (через CDN; можно удалить, если подключаете через npm/бандлер) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
 
-  <!-- HEADER: подставляется из header.html / localStorage -->
+  <!-- HEADER -->
   <header id="header-placeholder"></header>
 
   <!-- HERO -->
@@ -67,7 +69,7 @@
     <img src="https://dummyimage.com/1200x500/cccccc/000&text=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BE%D0%BA" alt="Карта поставок">
   </section>
 
-  <!-- STATS (креативная версия) -->
+  <!-- STATS (креатив) -->
   <section class="stats stats--creative" aria-labelledby="facts-title">
     <h2 id="facts-title">Факты о нас</h2>
     <div class="facts-bg" aria-hidden="true"></div>
@@ -107,20 +109,24 @@
     <h2>Хотите сотрудничать?</h2>
     <p>Оставьте заявку — свяжемся в течение 1 рабочего дня.</p>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="tel" name="phone" placeholder="Телефон" required>
-      <input type="email" name="email" placeholder="Email (для ответа)" required>
-      <input type="text" name="company" placeholder="Компания" required>
-      <input type="text" name="city" placeholder="Город" required>
+      <input type="text"   name="name"    placeholder="Ваше имя" required>
+      <input type="tel"    name="phone"   placeholder="Телефон" required>
+      <input type="email"  name="email"   placeholder="Email (для ответа)" required>
+      <input type="text"   name="company" placeholder="Компания" required>
+      <input type="text"   name="city"    placeholder="Город" required>
+      <textarea name="message" rows="4" placeholder="Комментарий (по желанию)"></textarea>
+
+      <!-- honeypot от ботов -->
+      <input type="text" name="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0">
+
       <button type="submit">Отправить заявку</button>
       <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
     </form>
   </section>
 
-  <!-- FOOTER: подставляется из footer.html / localStorage -->
+  <!-- FOOTER -->
   <footer id="footer-placeholder"></footer>
 
   <script src="app.js"></script>
 </body>
 </html>
-
